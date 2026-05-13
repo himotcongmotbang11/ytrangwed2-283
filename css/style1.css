@@ -1,1 +1,48 @@
-"csss"
+*{
+magin 0;
+padding 0px;
+background-color: SlateBlue;
+}
+div.contaner{
+padding : 0px 140px;
+
+margin 100px;
+}
+
+table, tr, td, th{
+background-color: red;
+
+border- collapse: collapse;
+}
+img{
+border-radius :50%;
+width:100%;
+max-width : 200px;
+
+}
+ul{
+list-style-type: square;
+lisr-stype-position: inside;
+
+}
+
+h3 {
+text-align: center;
+background-color:rgb(0, 0, 246);
+font-size:16px;
+color: white;
+}
+u {
+background-color:rgb(0, 0, 246);
+font-size:16px;
+ text-decoration-color: white;
+}
+div.maunen2,ul,li,ol{
+background-color: green;
+}
+p{
+background-color:rgb(255, 0, 131);
+}
+h2,a{
+background-color:rgb(255, 129, 11);
+}
