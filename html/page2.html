@@ -1,10 +1,30 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
 	<title>Page2</title>
 	<meta charset = "utf-8">
+	<link rel ="stylesheet" href ="../css/style2.css">
+	
 </head>
 <body>
-	xin chao lần 2
+	<input type="text" name="search" placeholder="Search..">
+	<div class="container">
+	<form id ="frmLogin">
+	<h2 id="title">Login </h2>
+	
+	<div class="from-group">
+		<label for ="txtUsername">Username: </label>
+		<input class ="from-control" type="text" id="txtUsername"name ="txtUsername">
+	</div>
+	<div class="from-group">
+		<label for ="txtpassword">password:</label>
+		<input  class="from-control"type="password" id="txtpassword" name=" txtpassword">
+	</div>
+		<input type="button" id="rsCancel" name="rsCancel" value="summit" onclick="window.location.href='page3.html';">
+		<input type="reset" id = "rsCancel" name="rsCancel" value =" Cancel" >
+
+	</form>	
+
+	</div>
 </body>
 </html>
