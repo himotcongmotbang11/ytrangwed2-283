@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>Page7</title>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" href="../css/style7.css" >
+	
+</head>
+<body>
+<div>
+<table>
+	<tr>
+		<th colspan="6" id ="hoadon">HÓA ĐƠN MUA HÀNG</th>
+	</tr>
+	<tr>
+		<th>STT</th>
+		<th>TÊN SẢN PHẨM</th>
+		<th>SỐ LƯỢNG</th>
+		<th>ĐƠN GIÁ</th>
+		<th>LOẠI</th>
+		<th>Thành TIỀN</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>Thọ Ồn Sữa</td>
+		<td class="soluong">4</td>
+		<td class="donggia">200</td>
+		<td>Thùng</td>
+		<td class="thanhtien">?</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Mì hảo hán</td>
+		<td class="soluong">2</td>
+		<td class="donggia">105</td>
+		<td>Thùng</td>
+		<td class="thanhtien">?</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Xúc Xích cp</td>
+		<td class="soluong">120</td>
+		<td class="donggia">45</td>
+		<td >túi</td>
+		<td class="thanhtien">?</td>
+	</tr>
+	<tr>
+	<td colspan ="5"> tổng thanh toán</td>
+	<td id ="thanhtoan">1</td>
+	</tr>
+
+</table>
+</div> 
+<<script>
+	const sl = document.getElementsByClassName("soluong");
+	const dg = document.getElementsByClassName("donggia");
+	const tt = document.getElementsByClassName("thanhtien");
+
+	let tongthanhtoan = 0;
+
+	for (let i = 0; i < sl.length; i++) {
+		let thanhtien = Number(sl[i].innerHTML) * Number(dg[i].innerHTML);
+
+		tt[i].innerHTML = thanhtien;
+
+		tongthanhtoan += thanhtien;
+	}
+
+	document.getElementById("thanhtoan").innerHTML = tongthanhtoan;
+</script>
+
+</body>
+</html>

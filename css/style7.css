@@ -1,0 +1,31 @@
+
+table
+{
+width: 800px;
+height: 500px;
+border-collapse: collapse;
+border-radius: 15px;
+
+}
+tr,th,td{
+	height: 70px;
+	font-size: 25px;
+	text-align: center;
+	border: 5px solid #197419;
+	border-radius: 20px;
+
+}
+
+#hoadon{
+	font-size: 50px;
+	font-family: "Time New Roma"serif;
+	
+}
+div
+{
+	border: 8px solid  #197419;
+width: 800px;
+	border-radius: 22px;
+	
+
+}
