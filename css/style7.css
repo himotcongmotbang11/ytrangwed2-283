@@ -5,21 +5,30 @@ width: 800px;
 height: 500px;
 border-collapse: collapse;
 border-radius: 15px;
-
+background-color: #198d19;
 }
-tr,th,td{
+th, td{
 	height: 70px;
 	font-size: 25px;
 	text-align: center;
-	border: 5px solid #197419;
-	border-radius: 20px;
+	padding: 10px;
+	background-color:#408c40;
+	color: #F0FFFF;
+border-bottom: 1px solid #ddd;
+}
+ td{
+	
 
+	background-color: ;
+	border-radius: 20px;
 }
 
-#hoadon{
+#hoadon,#dam{
 	font-size: 50px;
 	font-family: "Time New Roma"serif;
-	
+	background-color: #406640;
+	border-radius: 9px;
+	width: 100%;
 }
 div
 {
