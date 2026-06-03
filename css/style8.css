@@ -1,0 +1,20 @@
+
+.container{
+	margin: 100px;
+	background-color: rgb(87, 87, 170);
+	 border-radius: 30px;
+}
+#item{
+	background-color: bule;
+}
+body{
+	background-color: aqua;
+}
+img{
+	margin: 12px;
+	width: 320px;
+	border-radius: 20%;
+}
+p{
+	margin: 20px;
+}
