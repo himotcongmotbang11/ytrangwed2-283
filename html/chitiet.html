@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<title>chi tiet</title>
+	<meta charset = "utf-8">
+	<script src="../js/lib.js"></script>
+	
+</head>
+<body>
+
+	<div class ="container ">
+		<p id ="name"></p>
+		<p id ="price"></p>
+		<p id ="description"></p>
+		</div>
+	<script>
+		// 1. Lấy ID từ URL (Đổi từ 'masp' sang 'id' cho khớp với trang danh sách)
+		const urlParams = new URLSearchParams(window.location.search);
+		const productId = urlParams.get('id');
+
+		// 2. Tìm sản phẩm trong mảng dựa vào ID vừa lấy (Mảng tên là Products viết hoa chữ P)
+		const foundProduct = Products.find(obj => obj.id === productId);
+
+		// 3. Hiển thị dữ liệu ra giao diện
+		if (foundProduct) {
+			// Sửa các thuộc tính (.name, .price, .description, .image) theo đúng mảng của bạn
+			document.getElementById('name').innerHTML = foundProduct.name;
+			document.getElementById('price').innerHTML = foundProduct.price;
+			
+			// Dùng innerHTML thay cho innerText vì mô tả của bạn chứa thẻ <br> để xuống dòng
+			document.getElementById('description').innerHTML = foundProduct.description;
+			
+			// Sửa lỗi sai ID: Đổi từ 'detail-img' thành 'image' cho khớp với thẻ <img> dòng 11 của bạn
+			document.getElementById('image').src = foundProduct.image;
+			document.getElementById('image').alt = foundProduct.name;
+		} else {
+			// Trường hợp URL bậy bạ hoặc không tìm thấy ID phù hợp
+			document.body.innerHTML = `<h2>Sản phẩm không tồn tại hoặc đã bị xóa!</h2><a href="page8.html">Quay lại trang danh sách</a>`;
+		}
+	</script>
+</body>
+</html>

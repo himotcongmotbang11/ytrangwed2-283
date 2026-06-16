@@ -5,7 +5,7 @@ const Products=[
     price:"500 usd/con",
     description:"fwjhfjfhiosdfjiciodhvusyvsduifydufyuifyhefuyhe com meof này là giống mèo thuần chủng đến từ nam cực,<br> để thuận lợi cho việc sinh tồn gióng mèo này đã tiến hóa cơ thể của với ký cỡ nhỏ nhắn nhằm săn bắt tôm<br> núi lửa nằm sâu dưới đáy đại dương,vì thời tiết khắc nghiệt giống meok này đã thoái hóa hoàn toàn bộ lông<br> của chúng",
     image:"../asserts/images/meo.png",
-    link:"chi tiết.html"
+    link:"chitiet.html"
     },
     {
 		id:"2",
@@ -13,7 +13,7 @@ const Products=[
     price:"500 usd/con",
     description:"fwjhfjfhiosdfjiciodhvusyvsduifydufyuifyhefuyhe com meof này là giống mèo thuần chủng đến từ nam cực,<br> để thuận lợi cho việc sinh tồn gióng mèo này đã tiến hóa cơ thể của với ký cỡ nhỏ nhắn nhằm săn bắt tôm<br> núi lửa nằm sâu dưới đáy đại dương,vì thời tiết khắc nghiệt giống meok này đã thoái hóa hoàn toàn bộ lông<br> của chúng",
     image:"../asserts/images/meo.png",
-    link:"chi tiết.html"
+    link:"chitiet.html"
     }
 ];
 function createItem(obj)
@@ -21,7 +21,6 @@ function createItem(obj)
 		const listProducts =document.getElementById("product-list");
 
 		const item = document.createElement("div");
-		item.className="col";
 		item.setAttribute("class","item");
 
 		const containerImage = document.createElement("div");
@@ -49,7 +48,7 @@ function createItem(obj)
 		description.innerHTML=obj.description;
 		
 		const linkProduct = document.createElement("a");
-		linkProduct.innerHTML=xem chi tiết;
+		linkProduct.innerHTML="xem chi tiết";
 		linkProduct.setAttribute("href",obj.link+"?id="+obj.id);
 		linkProduct.setAttribute("class","btn btn-danger");
 
