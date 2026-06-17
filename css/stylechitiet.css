@@ -1,0 +1,25 @@
+img
+{
+width: 250px;
+padding: auto;
+     border-radius: 10%;
+}
+*
+{
+     background-color: aquamarine;
+}
+.container,#description,#name,#price,a 
+{    
+     margin: auto;
+     background-color: aqua;
+     width: 700px;
+     text-align: center;
+     height: auto;
+     border-radius: 10%;
+     line-height: 3.3;
+}   
+.container
+{
+      background-color: aqua;
+      height: 500px;
+}

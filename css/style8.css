@@ -1,20 +1,28 @@
+img
+{
+width: 250px;
 
-.container{
-	margin: 100px;
-	background-color: rgb(87, 87, 170);
-	 border-radius: 30px;
 }
-#item{
-	background-color: bule;
+*
+{   border-radius: 10%;
+     background-color: aquamarine;
 }
-body{
-	background-color: aqua;
+.container
+{   
+    width: 600px;
+    border: 1px solid black;
 }
-img{
-	margin: 12px;
-	width: 50px;
-	border-radius: 20%;
+#product-list
+{   
+    
+    padding: 60px;
+    line-height: 1;
+    margin-inline: 20px ;
+    background-color: purple;
+    
 }
-p{
-	margin: 20px;
+.row
+{   
+    gap: 12px;
+    padding: auto;
 }

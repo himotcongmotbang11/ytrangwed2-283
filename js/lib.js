@@ -5,6 +5,7 @@ const Products=[
     price:"500 usd/con",
     description:"fwjhfjfhiosdfjiciodhvusyvsduifydufyuifyhefuyhe com meof này là giống mèo thuần chủng đến từ nam cực,<br> để thuận lợi cho việc sinh tồn gióng mèo này đã tiến hóa cơ thể của với ký cỡ nhỏ nhắn nhằm săn bắt tôm<br> núi lửa nằm sâu dưới đáy đại dương,vì thời tiết khắc nghiệt giống meok này đã thoái hóa hoàn toàn bộ lông<br> của chúng",
     image:"../asserts/images/meo.png",
+	description1:"con meo nay rat la ngau",
     link:"chitiet.html"
     },
     {
@@ -12,16 +13,37 @@ const Products=[
     name:"con meo mau gi do",
     price:"500 usd/con",
     description:"fwjhfjfhiosdfjiciodhvusyvsduifydufyuifyhefuyhe com meof này là giống mèo thuần chủng đến từ nam cực,<br> để thuận lợi cho việc sinh tồn gióng mèo này đã tiến hóa cơ thể của với ký cỡ nhỏ nhắn nhằm săn bắt tôm<br> núi lửa nằm sâu dưới đáy đại dương,vì thời tiết khắc nghiệt giống meok này đã thoái hóa hoàn toàn bộ lông<br> của chúng",
-    image:"../asserts/images/meo.png",
+    image:"../asserts/images/meo1.png",
+	description1:"con meo nay co mau cam va rất là xinh đẹp",
     link:"chitiet.html"
-    }
+    },
+	{
+	id:"3",
+    name:"meo",
+    price:"500 usd/con",
+    description:"fwjhfjfhiosdfjiciodhvusyvsduifydufyuifyhefuyhe com meof này là giống mèo thuần chủng đến từ nam cực,<br> để thuận lợi cho việc sinh tồn gióng mèo này đã tiến hóa cơ thể của với ký cỡ nhỏ nhắn nhằm săn bắt tôm<br> núi lửa nằm sâu dưới đáy đại dương,vì thời tiết khắc nghiệt giống meok này đã thoái hóa hoàn toàn bộ lông<br> của chúng",
+    image:"../asserts/images/meo2.jpg",
+	description1:"con meo sieu nay va dẹp, co nguon gốc từ nề van minh dưới nước ",
+    link:"chitiet.html"
+	},
+	{
+	id:"4",
+    name:"meo",
+    price:"500 usd/con",
+    description:"fwjhfjfhiosdfjiciodhvusyvsduifydufyuifyhefuyhe com meof này là giống mèo thuần chủng đến từ nam cực,<br> để thuận lợi cho việc sinh tồn gióng mèo này đã tiến hóa cơ thể của với ký cỡ nhỏ nhắn nhằm săn bắt tôm<br> núi lửa nằm sâu dưới đáy đại dương,vì thời tiết khắc nghiệt giống meok này đã thoái hóa hoàn toàn bộ lông<br> của chúng",
+    image:"../asserts/images/meo2.jpg",
+	description1:"con meu nay co sơ thích giơ ngón cái để thể hiện sự yêu thích của mình",
+    link:"chitiet.html"
+	}
 ];
 function createItem(obj)
-{
+{		
+		
 		const listProducts =document.getElementById("product-list");
-
+		
 		const item = document.createElement("div");
-		item.setAttribute("class","item");
+		item.className = "col-12 col-md-4 mb-4";
+		;
 
 		const containerImage = document.createElement("div");
 		containerImage.setAttribute("class","image");
@@ -41,7 +63,7 @@ function createItem(obj)
 		namepro.innerHTML=obj.name;
 
 		const price = document.createElement("p");
-		price.innerHTML =obj.price +"/tui";
+		price.innerHTML =obj.price +"/con";
 
 		const description = document.createElement("p");
 		description.setAttribute("class","card-title");
