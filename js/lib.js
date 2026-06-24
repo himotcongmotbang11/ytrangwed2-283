@@ -3,7 +3,7 @@ const Products=[
 		id:"1",
     name:"con meo mau 333gi do",
     price:"500 usd/con",
-    description:"fwjhfjfhiosdfjiciodhvusyvsduifydufyuifyhefuyhe com meof này là giống mèo thuần chủng đến từ nam cực,<br> để thuận lợi cho việc sinh tồn gióng mèo này đã tiến hóa cơ thể của với ký cỡ nhỏ nhắn nhằm săn bắt tôm<br> núi lửa nằm sâu dưới đáy đại dương,vì thời tiết khắc nghiệt giống meok này đã thoái hóa hoàn toàn bộ lông<br> của chúng",
+    description:"com meof này là giống mèo thuần chủng đến từ nam cực,<br> để thuận lợi cho việc sinh tồn gióng mèo này đã tiến hóa cơ thể của với ký cỡ nhỏ nhắn nhằm săn bắt tôm<br> núi lửa nằm sâu dưới đáy đại dương,vì thời tiết khắc nghiệt giống meok này đã thoái hóa hoàn toàn bộ lông<br> của chúng",
     image:"../asserts/images/meo.png",
 	description1:"con meo nay rat la ngau",
     link:"chitiet.html"
@@ -12,9 +12,9 @@ const Products=[
 		id:"2",
     name:"con meo mau gi do",
     price:"500 usd/con",
-    description:"fwjhfjfhiosdfjiciodhvusyvsduifydufyuifyhefuyhe com meof này là giống mèo thuần chủng đến từ nam cực,<br> để thuận lợi cho việc sinh tồn gióng mèo này đã tiến hóa cơ thể của với ký cỡ nhỏ nhắn nhằm săn bắt tôm<br> núi lửa nằm sâu dưới đáy đại dương,vì thời tiết khắc nghiệt giống meok này đã thoái hóa hoàn toàn bộ lông<br> của chúng",
+    description:"này là giống mèo thuần chủng đến từ nam cực,<br> để thuận lợi cho việc sinh tồn gióng mèo này đã tiến hóa cơ thể của với ký cỡ nhỏ nhắn nhằm săn bắt tôm<br> núi lửa nằm sâu dưới đáy đại dương,vì thời tiết khắc nghiệt giống meok này đã thoái hóa hoàn toàn bộ lông<br> của chúng",
     image:"../asserts/images/meo1.png",
-	description1:"con meo nay co mau cam va rất là xinh đẹp",
+	description1:"con meo nay co mau cam va rất là xinh đẹp và thích chạy xe máy",
     link:"chitiet.html"
     },
 	{
@@ -28,13 +28,31 @@ const Products=[
 	},
 	{
 	id:"4",
-    name:"meo",
+    name:"tên meo like",
     price:"500 usd/con",
     description:"fwjhfjfhiosdfjiciodhvusyvsduifydufyuifyhefuyhe com meof này là giống mèo thuần chủng đến từ nam cực,<br> để thuận lợi cho việc sinh tồn gióng mèo này đã tiến hóa cơ thể của với ký cỡ nhỏ nhắn nhằm săn bắt tôm<br> núi lửa nằm sâu dưới đáy đại dương,vì thời tiết khắc nghiệt giống meok này đã thoái hóa hoàn toàn bộ lông<br> của chúng",
     image:"../asserts/images/meo2.jpg",
-	description1:"con meu nay co sơ thích giơ ngón cái để thể hiện sự yêu thích của mình",
+	description1:"con meu nay co sơ thích giơ ngón cái để thể hiện sự yêu thích của mình"+"<br>gia 10000 usd<br>",
     link:"chitiet.html"
-	}
+	},
+	{
+	id:"2",
+    name:"con meo mau gi do",
+    price:"500 usd/con",
+    description:"này là giống mèo thuần chủng đến từ nam cực,<br> để thuận lợi cho việc sinh tồn gióng mèo này đã tiến hóa cơ thể của với ký cỡ nhỏ nhắn nhằm săn bắt tôm<br> núi lửa nằm sâu dưới đáy đại dương,vì thời tiết khắc nghiệt giống meok này đã thoái hóa hoàn toàn bộ lông<br> của chúng",
+    image:"../asserts/images/meo1.png",
+	description1:"con meo nay co mau cam va rất là xinh đẹp và thích chạy xe máy",
+    link:"chitiet.html"
+    },
+    {
+    id:"2",
+    name:"con meo mau gi do",
+    price:"500 usd/con",
+    description:"này là giống mèo thuần chủng đến từ nam cực,<br> để thuận lợi cho việc sinh tồn gióng mèo này đã tiến hóa cơ thể của với ký cỡ nhỏ nhắn nhằm săn bắt tôm<br> núi lửa nằm sâu dưới đáy đại dương,vì thời tiết khắc nghiệt giống meok này đã thoái hóa hoàn toàn bộ lông<br> của chúng",
+    image:"../asserts/images/meo1.png",
+	description1:"con meo nay co mau cam va rất là xinh đẹp và thích chạy xe máy",
+    link:"chitiet.html"
+    }
 ];
 function createItem(obj)
 {		
@@ -43,7 +61,10 @@ function createItem(obj)
 		
 		const item = document.createElement("div");
 		item.className = "col-12 col-md-4 mb-4";
-		;
+		
+		item.className = "col item position-relative";
+
+    
 
 		const containerImage = document.createElement("div");
 		containerImage.setAttribute("class","image");

@@ -17,14 +17,14 @@
 		<a href="page8.html">Quay lại trang danh sách</a>
 		</div>
 	<script>
-		
+		// 1. Lấy ID từ URL (Đổi từ 'masp' sang 'id' cho khớp với trang danh sách)
 		const urlParams = new URLSearchParams(window.location.search);
 		const productId = urlParams.get('id');
 
-		
+		// 2. Tìm sản phẩm trong mảng dựa vào ID vừa lấy (Mảng tên là Products viết hoa chữ P)
 		const foundProduct = Products.find(obj => obj.id === productId);
 
-		
+		// 3. Hiển thị dữ liệu ra giao diện
 		if (foundProduct) {
 			
 			
