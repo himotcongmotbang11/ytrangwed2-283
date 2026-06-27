@@ -1,25 +1,84 @@
-img
-{
-width: 250px;
-padding: auto;
-     border-radius: 10%;
+/* Reset cơ bản và đặt màu nền cho toàn bộ trang web */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #7fffd4; /* Màu aquamarine dịu nhẹ cho nền web */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-*
-{
-     background-color: aquamarine;
+
+/* Khung bọc lớn chứa toàn bộ chi tiết sản phẩm */
+.container {
+    background-color: #00ffff; /* Màu aqua chủ đạo của bạn */
+    width: 600px;
+    height: auto; /* Để tự động co giãn theo nội dung thay vì cố định 500px */
+    margin: 30px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 24px; /* Bo góc mượt mà bằng px thay vì % */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Bóng đổ cho khung nổi bật */
 }
-.container,#description,#name,#price,a 
-{    
-     margin: auto;
-     background-color: aqua;
-     width: 700px;
-     text-align: center;
-     height: auto;
-     border-radius: 10%;
-     line-height: 3.3;
-}   
-.container
-{
-      background-color: aqua;
-      height: 500px;
+
+/* Định dạng hình ảnh chú mèo */
+img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover; /* Giúp ảnh không bị méo, biến dạng */
+    border-radius: 20px; /* Bo góc ảnh tinh tế */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: transparent; /* Loại bỏ nền lặp lại */
+}
+
+/* Tên sản phẩm */
+#name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+/* Giá cả */
+#price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #dc3545; /* Màu đỏ nổi bật cho giá tiền */
+    margin-bottom: 15px;
+}
+
+/* Miêu tả sản phẩm */
+#description {
+    font-size: 16px;
+    color: #444444;
+    line-height: 1.6; /* Khoảng cách dòng vừa phải, dễ đọc */
+    background-color: rgba(255, 255, 255, 0.5); /* Nền trắng mờ giúp chữ nổi lên */
+    padding: 15px;
+    border-radius: 12px;
+    text-align: left; /* Căn lề trái cho đoạn miêu tả dài nhìn chuyên nghiệp hơn */
+    margin-bottom: 25px;
+}
+
+/* Nút quay lại hoặc Xem chi tiết (Thẻ a) */
+a {
+    display: inline-block;
+    background-color: #dc3545; /* Đổi nút sang màu đỏ cho giống bên page8 */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px; /* Nút bo tròn hình viên thuốc */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.3);
+}
+
+/* Hiệu ứng khi di chuột vào nút */
+a:hover {
+    background-color: #b21f2d;
+    transform: translateY(-2px); /* Nút nhích nhẹ lên trông rất tương tác */
+    box-shadow: 0 6px 15px rgba(220, 53, 69, 0.4);
 }

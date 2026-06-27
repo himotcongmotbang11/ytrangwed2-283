@@ -2,17 +2,41 @@
 <html lang="vi">
 <head>
 	<title>Page5</title>
-	<meta charset = "utf-8">
-	
-	
+	<meta charset="utf-8">
 </head>
 <body>
  
 <script>
-	let name= prompt("Nhập tên của bạn");
-	let yob = Number(prompt("Hãy nhập năm sinh của bạn"));
+	let name = prompt("Nhập tên của bạn:");
+	let yob = Number(prompt("Hãy nhập năm sinh của bạn (Ví dụ: 2004):"));
 	
-	window.alert("xin chào" + name + "năm 2026 bạn đã" + (2026-yob)+ "năm nay nữa ban lớn ghê :?" + "Hôm nay trời đẹp nhỉ:)))))))))))");
+	// Mảng chứa 12 con giáp sắp xếp theo thứ tự tính toán của Thiên Can Địa Chi
+	const chi = ["Thân (🐒)", "Dậu (🐓)", "Tuất (🐕)", "Hợi (🐖)", "Tý (🐀)", "Sửu (🐃)", "Dần (🐅)", "Mão (🐈)", "Thìn (🐉)", "Tỵ (🐍)", "Ngọ (🐎)", "Mùi (🐐)"];
+	
+	// Công thức tính con giáp dựa vào năm sinh
+	let conGiap = chi[yob % 12];
+	let tuoi = 2026 - yob;
+
+	// Tạo một lời nhận xét "lầy lội" tùy theo độ tuổi
+	let nhanXet = "";
+	if (tuoi < 18) {
+		nhanXet = "vẫn còn là nhi đồng thối tai nha 👶";
+	} else if (tuoi >= 18 && tuoi < 30) {
+		nhanXet = "đang ở độ tuổi cày cuốc bao ngầu 🕶️";
+	} else {
+		nhanXet = "đã trải sự đời, sắp thành lão làng rồi cụ ơi 👵👴";
+	}
+	
+	// Xuất thông báo bằng dấu huyền `` siêu hay ho
+	window.alert(
+`✨ CHÀO MỪNG ĐẾN VỚI NĂM 2026 ✨
+
+Chào ${name} - người con hệ tuổi ${conGiap}! 🎉
+Tính đến năm nay (2026), bạn đã tròn ${tuoi} tuổi rồi đó.
+
+Nhìn chung thì bạn ${nhanXet}.
+Hôm nay trời đẹp thế này, ngại gì không làm tí trà sữa nhỉ? 🥤✨`
+	);
 </script>
 
 </body>

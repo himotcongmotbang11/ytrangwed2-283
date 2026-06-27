@@ -1,44 +1,83 @@
-
-table
-{
-width: 800px;
-height: 500px;
-border-collapse: collapse;
-border-radius: 15px;
-background-color: #198d19;
-}
-th, td{
-	height: 70px;
-	font-size: 25px;
-	text-align: center;
-	padding: 10px;
-	background-color:#408c40;
-	color: #F0FFFF;
-border-bottom: 1px solid #ddd;
-}
- td{
-	
-
-	background-color: ;
-	border-radius: 20px;
+/* Tổng thể bảng */
+table {
+    width: 800px;
+    border-collapse: collapse;
+    background-color: #ffffff; /* Đổi nền bảng sang trắng cho dễ đọc chữ */
+    font-family: "Times New Roman", Times, serif;
+    overflow: hidden;
 }
 
-#hoadon,#dam{
-	font-size: 50px;
-	font-family: "Time New Roma"serif;
-	background-color: #406640;
-	border-radius: 9px;
-	width: 100%;
+/* Khung div bọc ngoài bảng */
+div {
+    border: 4px solid #197419;
+    width: 800px;
+    border-radius: 16px;
+    overflow: hidden; /* Bắt buộc có để bảng bên trong bo góc theo div */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); /* Tạo bóng đổ cho sang trọng */
+    margin: 20px auto; /* Căn giữa màn hình */
 }
-div
-{
-	border: 8px solid  #197419;
-width: 800px;
-	border-radius: 22px;
-	
 
+/* Định dạng chung cho Tiêu đề (TH) và Ô dữ liệu (TD) */
+th, td {
+    padding: 14px 10px;
+    text-align: center;
+    font-size: 18px; /* Hạ cỡ chữ xuống một chút nhìn sẽ tinh tế hơn */
+    border-bottom: 1px solid #eeeeee;
 }
-tr:hover
-{
-backgroud-color:rgb(230, 86, 29);
+
+/* Định dạng riêng cho hàng tiêu đề cột */
+tr:nth-child(2) th {
+    background-color: #408c40;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase; /* Viết hoa chữ */
+    letter-spacing: 0.5px;
+}
+
+/* Định dạng ô nội dung */
+td {
+    color: #333333; /* Chữ màu tối trên nền trắng sẽ rõ hơn */
+}
+
+/* Định dạng cột số lượng, đơn giá, thành tiền cho nổi bật */
+.soluong, .donggia {
+    font-weight: 500;
+}
+.thanhtien {
+    font-weight: bold;
+    color: #197419;
+}
+
+/* ID Hóa đơn mua hàng (Mép trên cùng) */
+#hoadon {
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #197419;
+    color: #ffffff;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+/* Hàng tổng thanh toán dưới cùng */
+#dam {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right; /* Căn chữ "Tổng thanh toán" về bên phải sát số tiền */
+    padding-right: 30px;
+    background-color: #f4faf4;
+    color: #197419;
+}
+
+#thanhtoan {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #197419;
+    color: #ffffff;
+}
+
+/* Hiệu ứng di chuột (Hover) từng hàng */
+tr:not(:first-child):not(:last-child):hover {
+    background-color: #f1f9f1; /* Đổi sang màu xanh lá cực nhẹ tạo cảm giác mượt mà */
+    transition: 0.2s ease-in-out;
 }

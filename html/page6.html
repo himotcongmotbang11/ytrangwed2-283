@@ -2,23 +2,70 @@
 <html lang="vi">
 <head>
 	<title>Page6</title>
-	<meta charset = "utf-8">
-	
-	
+	<meta charset="utf-8">
 </head>
 <body>
  
 <script>
-	let dai= Number(prompt("Nhập chiều dài hình chữa nhật"));
-	let rong = Number(prompt("Hãy nhập chiều rộng hình nhữ nhật"));
-	if(dai<rong)
-	alert("này chiều dài nhỉ hơn chiều rộng");
-	else if (dai==rong)
-	alert("Đặt biệt đây là hình vuồng: Diện tích hình vuông là"+ dai*rong);
-	else 
-		alert(" Diện tích hình chữ nhật là "+ dai*rong);
+	let dai, rong;
+
+	// 1. Vòng lặp ép nhập CHIỀU DÀI chuẩn chỉnh
+	while (true) {
+		dai = Number(prompt(" Nhập chiều dài hình chữ nhật (phải là số dương):"));
+		
+		// Nếu ĐÚNG là số và LỚN HƠN 0 thì dừng vòng lặp
+		if (!isNaN(dai) && dai > 0) {
+			break; 
+		}
+		alert(" Sai rồi! Chiều dài không được để trống, không được nhập chữ và phải lớn hơn 0. Nhập lại đi nha!");
+	}
+
+	// 2. Vòng lặp ép nhập CHIỀU RỘNG chuẩn chỉnh
+	while (true) {
+		rong = Number(prompt(" Nhập chiều rộng hình chữ nhật (phải là số dương):"));
+		
+		if (!isNaN(rong) && rong > 0) {
+			break; 
+		}
+		alert(" Lại sai rồi! Chiều rộng phải là số hợp lệ lớn hơn 0. Nhập lại nhanh lên nào!");
+	}
+
+	// ==========================================
+	// 3. ĐOẠN XỬ LÝ LOGIC SAU KHI ĐÃ NHẬP ĐÚNG
+	// ==========================================
 	
-	window.alert("xin chào" + name + "năm 2026 bạn đã" + (2026-yob)+ "năm nay nữa ban lớn ghê :?" + "Hôm nay trời đẹp nhỉ:)))))))))))");
+	// Trường hợp người dùng cố tình nhập ngược (Dài < Rộng)
+	if (dai < rong) {
+		alert(`🤨 Chiều dài (${dai}) lại nhỏ hơn chiều rộng (${rong}) à? Máy tự đảo lại cho đúng bài bản luôn nhé!`);
+		let temp = dai;
+		dai = rong;
+		rong = temp;
+	}
+
+	// Tính toán kết quả
+	let dienTich = dai * rong;
+	let chuVi = (dai + rong) * 2;
+
+	// In kết quả cuối cùng
+	if (dai === rong) {
+		alert(
+`🟥 ĐẶC BIỆT: ĐÂY LÀ HÌNH VUÔNG!
+----------------------------------
+- Cạnh hình vuông: ${dai} m
+- Diện tích: ${dienTich} m²
+- Chu vi: ${chuVi} m
+=> Quá chuẩn xác! 💯`
+		);
+	} else {
+		alert(
+`📐 KẾT QUẢ HÌNH CHỮ NHẬT KHÔNG THỂ SAI:
+----------------------------------
+- Chiều dài: ${dai} m
+- Chiều rộng: ${rong} m
+- Diện tích: ${dienTich} m²
+- Chu vi: ${chuVi} m`
+		);
+	}
 </script>
 
 </body>
